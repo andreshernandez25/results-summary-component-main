@@ -1,0 +1,151 @@
+body{
+    background-color:  hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk";
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    height: 75%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}
+
+.grid-left{
+    background-blend-mode: hsl(252, 100%, 67%), hsl(241, 81%, 54%);
+    background: linear-gradient(0deg,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 10%;
+    color: hsl(241, 100%, 89%);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.score{
+    background-color: hsla(256, 72%, 46%, 1);
+    width: 30%;
+    text-align: center;
+    border-radius: 50%;
+    height: 20%;
+    position: absolute;
+    top: 25%;
+    
+}
+
+.score h1 {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+}
+
+.score p {
+    position: absolute;
+    top: 55px;
+    left: 40px;
+    color: hsl(241, 100%, 89%);
+}
+
+
+.message{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.message h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+
+}
+
+.message p {
+    color: hsl(241, 100%, 89%);
+}
+
+
+.grid-rigth{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 30px 30px 0;
+    height: 100%;
+ 
+    position: relative;
+}
+
+.grid-rigth .title-2 {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: 90px;
+    left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.first{
+    background-color: hsl(0, 100%, 67%, 0.3);
+    border-radius: 10px;
+}
+
+.first .item-skill {
+ color: hsl(0, 100%, 67%, 0.7);
+}
+
+            
+.icon-title{
+    display: flex;
+    position: absolute;
+}
+
+.icon-title svg {
+    position: relative;
+    top: 10px;
+}
+
+.icon-title p {
+    position: relative;
+    left: 20px;
+}
+.item-score{
+    
+    right: 10px;
+}
+
+button {
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    padding: 20px 35%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+}
+
+
