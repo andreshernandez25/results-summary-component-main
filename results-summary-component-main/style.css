@@ -1,151 +1,204 @@
+:root{
+    --button: hsl(224, 30%, 27%);
+    --reaction: hsl(0, 100%, 67%);
+}
 body{
-    background-color:  hsl(221, 100%, 96%);
-    font-family: "Hanken Grotesk";
+    font-family: 'Hanken Grotesk', sans-serif;
+    
 }
 
 .container{
+    background-color: hsl(221, 100%, 96%);
+    margin: 0 auto;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 700px;
+    justify-content: center;
+}
+
+.cards{
+    background-color:hsl(221, 100%, 96%);
+    margin: 0 auto;
+    height: 60%;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 26px 0px hsl(241, 100%, 89%, 0.4);
+    -moz-box-shadow: 10px 10px 26px 0px hsl(241, 100%, 89%, 0.4);
+    box-shadow: 10px 10px 26px 0px hsl(241, 100%, 89%, 0.4);
     
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    height: 75%;
-    background-color: hsl(0, 0%, 100%);
+.card-left{
+    background: hsl(241, 81%, 54%);
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
     border-radius: 30px;
-}
-
-.grid-left{
-    background-blend-mode: hsl(252, 100%, 67%), hsl(241, 81%, 54%);
-    background: linear-gradient(0deg,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-    border-radius: 30px;
+    width: 250px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    flex-basis: 50%;
+    text-align: center;
 }
 
 .title{
-    position: absolute;
-    top: 10%;
     color: hsl(241, 100%, 89%);
-    font-weight: 800;
-    font-size: 25px;
-}
-
-.score{
-    background-color: hsla(256, 72%, 46%, 1);
-    width: 30%;
-    text-align: center;
-    border-radius: 50%;
-    height: 20%;
-    position: absolute;
-    top: 25%;
+    font-weight: 700;
+    width: 300px;
+    height: 50px;
+    margin: 40px 0 50px 0;
+    font-size: 20px;
     
 }
 
-.score h1 {
-    position: absolute;
-    top: 5px;
-    left: 40px;
-    color: hsl(0, 0%, 100%);
-    font-size: 2.5rem;
+.score{
+    background:  hsla(256, 72%, 46%, 1);
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%,hsla(241, 72%, 46%, 0) 100%);
+    width: 170px;
+    height: 170px;
+    margin: 0 0 30px 0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+    
 }
-
-.score p {
-    position: absolute;
-    top: 55px;
-    left: 40px;
+.score h1 {
+    margin-top: 40px;
+    font-size: 60px;
+}
+.score p{
+    margin-top: -40px;
     color: hsl(241, 100%, 89%);
 }
-
 
 .message{
-    margin-top: 150px;
-    text-align: center;
+   color: hsl(221, 100%, 96%);
+    width: 300px;
+    height: 50px;
 }
-
-.message h2 {
-    color: hsl(0, 0%, 100%);
-    font-size: 35px;
-
-}
-
 .message p {
-    color: hsl(241, 100%, 89%);
+    color: hsl(241, 100%, 89%)
+    inline-size: 8 rem;
 }
 
-
-.grid-rigth{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0 30px 30px 0;
-    height: 100%;
- 
-    position: relative;
+.card-rigth{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 50px;
+    background-color: hsl(221, 100%, 96%);
+    border-radius: 30px;
+    font-weight: 700;
+    
+}
+.title-2{
+    width: 200px;
+    height: 50px;
+    color: var(--button);
+    font-size: 20px;
 }
 
-.grid-rigth .title-2 {
-    position: absolute;
-    top: 55px;
-    left: 20px;
-    font-weight: 800;
-    font-size: 25px;
+.items{
+    margin-top: 50px;
+    
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .item{
     display: flex;
-    flex-direction: row;
     width: 100%;
-    position: relative;
-    top: 90px;
-    left: 20px;
     justify-content: space-between;
-    align-items: center;
-    width: 80%;
+    
 }
-
-.first{
-    background-color: hsl(0, 100%, 67%, 0.3);
-    border-radius: 10px;
+.item span{
+    font-weight: 300;
 }
-
-.first .item-skill {
- color: hsl(0, 100%, 67%, 0.7);
-}
-
-            
 .icon-title{
     display: flex;
-    position: absolute;
-}
-
-.icon-title svg {
-    position: relative;
-    top: 10px;
-}
-
-.icon-title p {
-    position: relative;
-    left: 20px;
-}
-.item-score{
     
-    right: 10px;
 }
 
-button {
-    color: white;
-    background-color: hsl(224, 30%, 27%);
-    padding: 20px 35%;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 100px;
-    left: 15px;
+.icon-title svg, .icon-title p {
+    display: inline-block;
 }
 
+svg {
+    transform: translateY(70%);
+    
+}
+.icon-title p{
+    margin-left: 5px;
+}
 
+.reaction{
+    background-color: hsl(0, 100%, 67%, 0.2);
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.reaction .item-skill{
+    color:hsl(0, 100%, 67%) ;
+}
+
+.memory{
+    background-color: hsl(39, 100%, 56%, 0.2);
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.memory .item-skill{
+    color:hsl(39, 100%, 56%) ;
+}
+
+.verbal{
+    background-color:hsl(166, 100%, 37%, 0.2);
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.verbal .item-skill{
+    color:hsl(166, 100%, 37%) ;
+}
+.visual{
+    background-color: hsl(234, 85%, 45%, 0.2);
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.visual .item-skill{
+    color:hsl(234, 85%, 45%) ;
+}
+
+button{
+    margin-top: 55px;
+    margin-left: 40px;
+    padding: 15px 80px;
+    background-color: var(--button);
+    color: hsl(241, 100%, 89%);
+    border-radius: 30px;
+    font-weight: 800;
+}
+@media screen and (max-width: 480px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card-left{
+        flex-basis: 100%;
+    }
+    .card-rigth{
+        flex-basis: 100%;
+    }
+}
